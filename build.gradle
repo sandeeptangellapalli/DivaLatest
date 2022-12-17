@@ -1,0 +1,12 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+plugins {
+    id 'com.android.application' version '7.3.1' apply false
+    id 'com.android.library' version '7.3.1' apply false
+    id "org.sonarqube" version "3.4.0.2513"
+}
+
+allprojects {
+    version = '1.0.2'
+    group = 'org.sonarqube.sample'
+}
+apply from: "$project.rootDir/sonar.gradle"
